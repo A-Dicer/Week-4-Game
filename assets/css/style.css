@@ -1,6 +1,15 @@
+@font-face {
+    font-family: x-file;
+    src: url(../fonts/x-files.ttf);
+	}
+html {
+	padding: 50px;
+}
+
 body {
+	font-family: x-file;
 	width: 800px;
-	margin: 50px auto;
+	margin: 0 auto;
 	box-shadow: 3px 5px 7px #000;
 }
 
@@ -18,12 +27,11 @@ main {
 	z-index: 1;
 }
 footer {
-	height: 35px;
+	height: 30px;
 	background-color: #fff;
 	border: solid #000 1px;
 	text-align: center;
-	padding-top: 15px;
-
+	padding-top: 18px;
 }
 
 #logo {
@@ -39,27 +47,175 @@ footer {
 	position: absolute;
 	width: 798px;
 	height: 400px;
-	/* filter: opacity(.8) blur(3px); */
+	/*filter: opacity(.8) blur(3px);*/
 	background-image: url("../images/background.png");
 	background-size: 800px;
 	background-position: 0 -38px;
-	
+	z-index: 3;
 }
 
-#info {
+#select {
+	text-align: center;
 	display: none;
 	position: absolute;
-	top: 50px;
-	left: 100px;
-	width: 600px;
-	height: 300px;
-	border: solid #000 1px;
-	border-radius: 20px;
-	background-color: #fff;
+	bottom: -20px;
+	width: 100%;
+	z-index: 4;
+}
+
+#playBtn {
+	width: 20%;
+	height: 10%;
+	position: absolute;
+	left: 320px;
+	top: 55%;
+    background-color: #f00;
+    border: solid #000 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: x-file;
+    font-size: 18px;
+    box-shadow: 3px 5px 7px #000; 
+    z-index: 5;
+}
+
+ h1 {
+ 	padding: 60px 0;
+ 	color: #f00;
+	font-size: 40px;
+	top: 15px;
+	text-shadow: 3px 3px 2px #000; 
+	z-index: 1;
+}
+
+h3 {
+	font-size: 10px;
+}
+
+h4 {
+	padding-top: 20%;
+}
+
+#vs {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: solid #000 2px;
+	font-size: 50px;
+	z-index: 6;
+	text-align: center;	
+}
+
+#cardOne {
+	display: ;
+	left: 8%;
+	background-image: url("../images/mulder.jpg");
+	background-size: 100%;
+}
+
+#cardTwo {
+	display: ;
+	left: 30% ;
+	background-image: url("../images/scully.jpg");
+	background-size: 100%;
+}
+
+#cardThree {
+	display: ;
+	left: 52% ;
+	background-image: url("../images/skinner.jpg");
+	background-size: 150%;
+	background-position: -50px 0;
+}
+
+#cardFour {
+	display: ;
+	left: 74% ;
+	background-image: url("../images/csm.jpg");
+	background-size: 100%;
+}
+
+.cardHolder {
+	position: relative;
+	/*background-color: #ccc;*/
+	width: 100%;
+	height: 100%;
+	z-index: 7;
+}
+
+.hlth {
+	position: absolute;
+	top: -15%;
+	left: 0;
+	width: 100%;
+	height: 10%;
+	border-top: solid #000 1px;
+	border-bottom: solid #000 1px;
+	background-color: #ccc;
+}
+
+.hlthPrc {
+	position: absolute;
+	background-color: #f00;
+	width: 100%;
+	height: 100%;
+	z-index: 8;	
 }
 
 .card {
+	display: none;
+	position: absolute;
+	top: 20%;
 	border: solid #000 1px;
-	width: 100px;
-	height: 130px;
+	width: 150px;
+	height: 200px;
+	z-index: 3;
+	background-color: #fff;
+	box-shadow: 3px 5px 7px #000;
+	z-index: 6;
+}
+
+.cardInfo {
+	position: absolute;
+	bottom: 0;
+	height: 15%;
+	width: 100%;
+	background-color: #333;
+	z-index: 8;
+}
+
+.atk {
+	position: absolute;
+	bottom: 60%;
+	left: 2%;
+	width: 17%;
+	height: 55%;
+	padding-top: 5%;
+	font-size: 75%;
+	text-align: center;
+	background-color: #fff;
+	border: solid #f00 2px;
+	border-radius: 50%;
+	z-index: 9;
+	box-shadow: 2px 2px 3px #000;
+}
+
+h2 {
+	position: absolute;
+	bottom: 18%;
+	width: 120%;
+	font-size: 75%;
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000; 
+}
+
+p {
+	font-family: times;
+	color: #fff;
+	text-align: center;
+	padding-top: 5%;
+	font-size: 90%;
 }

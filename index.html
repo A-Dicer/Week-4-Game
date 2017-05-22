@@ -8,38 +8,108 @@
 		
 		<title>X-files Attack</title>
 	</head>
-<body>
-	
-	<!-- will hold header with image and scroe info -->
-	<header>
-		<div class="container">
-			<img src="assets/images/logo.png" id="logo">
-		</div>
-	</header>
-
-	<!-- will hold the battle field etc -->
-	<main>
-		<section class="container">
-			<!-- <div class="card" id="cardOne"> -->
-
-			<!-- This will add a filter to the background -->
-			<div id="focus">
+	<body>
+		
+		<!-- will hold header with image and scroe info -->
+		<header>
+			<div class="container">
+				<img src="assets/images/logo.png" id="logo">
 			</div>
+		</header>
 
-			<!-- div for info -->
-			<div id="info">
-			</div>
-		</section>
-	</main>
+		<!-- will hold the battle field etc -->
+		<main>
+			<section id="main" class="container">
+				
+				<div id="vs">
+					<h4>- VS -</h4>
+					<button id="playBtn">Attack</button>
+				</div>
+		
+				<div class="card" id="cardOne" value="0">
+					<div class="cardHolder">
+					<h2>Mulder</h2>
+						<div class="cardInfo">
+						<div class="atk" id="atk0">
+							100	
+						</div>	
+						<P> Attack Pwr: 50 </P>				
+						<div class="hlth">
+							<div class="hlthPrc" id="hlth0">
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
 
-	<!-- copyright info etc -->
-	<footer>
-		<h3>©Andrew Dicer: 2017</h3>
-	</footer>
+				<div class="card" id="cardTwo" value="1">
+					<h2>Scully</h2>
+					<div class="cardInfo">
+						<div class="atk" id="atk1">
+							90	
+						</div>	
+						<P> Attack Pwr: 40 </P>						
+						<div class="hlth">
+							<div class="hlthPrc" id="hlth1">
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="card" id="cardThree" value="2">
+				<h2>Skinner</h2>
+					<div class="cardInfo">
+					<div class="atk" id="atk2">
+							120
+						</div>	
+						<P> Attack Pwr: 60 </P>
+						<div class="hlth">
+							<div class="hlthPrc" id="hlth2">
+							</div>
+						</div>
+					</div>
+				</div>
 
-</body>
+				<div class="card" id="cardFour" value="3">
+				<h2>Smoking Man</h2>
+					<div class="cardInfo">
+					<div class="atk" id="atk3">
+							140
+						</div>	
+						<P> Attack Pwr: 80 </P>
+						<div class="hlth">
+							<div class="hlthPrc" id="hlth3">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- This will add a filter to the background -->
+				<div id="focus"></div>
 
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<script src="assets/javascript/game.js"></script>
+				<!-- div for selection text -->
+				<div id="select">
+					<h1>Select Your Charecter</h1>
+				</div>
+			</section>
+		</main>
+
+		<!-- copyright info etc -->
+		<footer>
+			<h3>©Andrew Dicer: 2017</h3>
+		</footer>
+		
+		<!-- div to hold audio componant -->
+		<audio id="sound">
+	      <source src="" type="audio/mpeg"> Your browser does not support the audio element.
+	    </audio>
+
+	    <audio id="theme">
+	      <source src="" type="audio/mpeg"> Your browser does not support the audio element.
+	    </audio>
+
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="assets/javascript/game.js"></script>
 </html>
