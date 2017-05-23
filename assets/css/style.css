@@ -58,7 +58,7 @@ footer {
 	text-align: center;
 	display: none;
 	position: absolute;
-	bottom: -20px;
+	bottom: -45px;
 	width: 100%;
 	z-index: 4;
 }
@@ -97,6 +97,19 @@ h4 {
 	padding-top: 20%;
 }
 
+.atkPts {
+	display: none;
+	top: 30px;
+	width: 100%;
+	text-align: center;
+	font-size: 75px;
+	text-shadow: 3px 3px 2px #000;
+	transform: rotate(15deg); 
+	color: #f00;
+	position: absolute;
+	z-index: 19
+}
+
 #vs {
 	display: none;
 	position: absolute;
@@ -108,21 +121,21 @@ h4 {
 	text-align: center;	
 }
 
-#cardOne {
+#mulder {
 	display: ;
 	left: 8%;
 	background-image: url("../images/mulder.jpg");
 	background-size: 100%;
 }
 
-#cardTwo {
+#scully {
 	display: ;
 	left: 30% ;
 	background-image: url("../images/scully.jpg");
 	background-size: 100%;
 }
 
-#cardThree {
+#skinner {
 	display: ;
 	left: 52% ;
 	background-image: url("../images/skinner.jpg");
@@ -130,7 +143,7 @@ h4 {
 	background-position: -50px 0;
 }
 
-#cardFour {
+#smokingMan {
 	display: ;
 	left: 74% ;
 	background-image: url("../images/csm.jpg");
