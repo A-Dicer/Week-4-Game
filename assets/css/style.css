@@ -47,7 +47,6 @@ footer {
 	position: absolute;
 	width: 798px;
 	height: 400px;
-	/*filter: opacity(.8) blur(3px);*/
 	background-image: url("../images/background.png");
 	background-size: 800px;
 	background-position: 0 -38px;
@@ -63,7 +62,24 @@ footer {
 	z-index: 4;
 }
 
-#playBtn {
+#replay{
+	width: 20%;
+	height: 20%;
+	position: absolute;
+	left: 320px;
+	top: 80%;
+    background-color: #f00;
+    border: solid #000 1px;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    font-family: x-file;
+    font-size: 18px;
+    box-shadow: 3px 5px 7px #000; 
+    z-index: 5;
+}
+
+.btn {
 	width: 20%;
 	height: 10%;
 	position: absolute;
@@ -72,7 +88,7 @@ footer {
     background-color: #f00;
     border: solid #000 1px;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     font-family: x-file;
     font-size: 18px;
@@ -81,6 +97,15 @@ footer {
 }
 
  h1 {
+ 	padding: 60px 0;
+ 	color: #f00;
+	font-size: 40px;
+	top: 15px;
+	text-shadow: 3px 3px 2px #000; 
+	z-index: 1;
+}
+
+ h5 {
  	padding: 60px 0;
  	color: #f00;
 	font-size: 40px;
@@ -110,12 +135,21 @@ h4 {
 	z-index: 19
 }
 
+#end {
+	display: none ;
+	position: absolute;
+	text-align: center;
+	font-size: 50px;
+	top: 25%;
+	width: 100%;
+	z-index: 22;
+}
+
 #vs {
 	display: none;
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	border: solid #000 2px;
 	font-size: 50px;
 	z-index: 6;
 	text-align: center;	
@@ -184,7 +218,6 @@ h4 {
 	border: solid #000 1px;
 	width: 150px;
 	height: 200px;
-	z-index: 3;
 	background-color: #fff;
 	box-shadow: 3px 5px 7px #000;
 	z-index: 6;
